@@ -1,0 +1,22 @@
+{
+  "name": "coding-fun",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Having fun while learning simple data structures and fundamental ideas.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "coverage": "jest --coverage=true"
+  },
+  "author": "Woodstock Developer Group",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@babel/core": "^7.23.2",
+    "@babel/preset-env": "^7.23.2",
+    "babel-jest": "^29.7.0",
+    "jest": "^29.7.0"
+  },
+  "dependencies": {
+    "xml2json": "^0.12.0"
+  }
+}
