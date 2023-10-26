@@ -5,8 +5,8 @@
  * @returns
  */
 const reverseIt = (value) => {
-  if (value === '') return ''
-  else return reverseIt(value.substring(1)) + value.charAt(0)
+  if (value === "") return "";
+  else return reverseIt(value.substring(1)) + value.charAt(0);
 };
 
 export default reverseIt;
