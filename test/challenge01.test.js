@@ -1,4 +1,4 @@
-import reverseIt from "../src/challenge01";
+import * as challenge01 from "../src/challenge01";
 
 describe("Challenge 01", () => {
   const t1 = "JavaScript";
@@ -14,12 +14,15 @@ describe("Challenge 01", () => {
   ];
 
   test("Reverse a single string", () => {
-    expect(reverseIt(t1)).toBe(t1.split("").reverse().join(""));
+    expect(challenge01.reverseIt(t1)).toBe(t1.split("").reverse().join(""));
   });
 
   test("Reverse all strings in an array", () => {
+    let t2Rev = []
     for (let i = 0; i < t2.length; i++) {
-      expect(reverseIt(t2[i])).toBe(t2[i].split("").reverse().join(""));
+      t2Rev.push((t2[i]).split('').reverse().join(''))
     }
+      expect(challenge01.reverseItArr(t2)).toEqual(t2Rev);
+  
   });
 });
