@@ -10,7 +10,20 @@
  * @returns 
  */
 const generatePassword = (length) => {
-  return ""
+  let password = []
+  if (length < 8) throw new Error('Password too short. Minimum of 8 charachters needed')
+  else {
+    const randomCharGen = (min, max) => {
+      return String.fromCharCode(Math.floor(Math.random() * (max - min)+1) + min)
+    }
+    const first = randomCharGen(65, 90)
+    password.push(first)
+    while (password.length < length) {
+      let rest = randomCharGen(33,126)
+      password.push(rest)
+    }
+  }
+  return Object.freeze(password.join(''))
 }
 
 export default generatePassword

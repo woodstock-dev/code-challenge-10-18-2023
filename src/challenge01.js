@@ -4,6 +4,9 @@
  * @param {string} value
  * @returns
  */
-const reverseIt = (value) => {};
+const reverseIt = (value) => {
+  if (value === '') return ''
+  else return reverseIt(value.substring(1)) + value.charAt(0)
+};
 
 export default reverseIt;
