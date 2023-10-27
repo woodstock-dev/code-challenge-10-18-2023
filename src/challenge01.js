@@ -10,5 +10,5 @@ export const reverseIt = (value) => {
 };
 
 export const reverseItArr = (arr) => {
-  return arr.map(ele => reverseIt(ele))
-}
+  return arr.map((ele) => reverseIt(ele));
+};

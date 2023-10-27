@@ -18,11 +18,10 @@ describe("Challenge 01", () => {
   });
 
   test("Reverse all strings in an array", () => {
-    let t2Rev = []
+    let t2Rev = [];
     for (let i = 0; i < t2.length; i++) {
-      t2Rev.push((t2[i]).split('').reverse().join(''))
+      t2Rev.push(t2[i].split("").reverse().join(""));
     }
-      expect(challenge01.reverseItArr(t2)).toEqual(t2Rev);
-  
+    expect(challenge01.reverseItArr(t2)).toEqual(t2Rev);
   });
 });
